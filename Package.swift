@@ -7,8 +7,7 @@ let package = Package(
     name: "allenMath",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(name: "allenMath",targets: ["allenMath"]),
-        .executable(name: "allenMathExe", targets: ["allenMathExe"])
+        .library(name: "allenMath",targets: ["allenMath"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,15 +19,7 @@ let package = Package(
         .target(
             name: "allenMath",
             dependencies: [],
-            path: "./"
-        ),
-        .executableTarget(
-          name: "allenMathExe",
-          dependencies: [],
-          path: "./"
-        ),
-        .testTarget(
-            name: "allenMathTests",
-            dependencies: ["allenMath"]),
+            path: "./iosMath"
+        )
     ]
 )
