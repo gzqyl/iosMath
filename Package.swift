@@ -19,7 +19,7 @@ let package = Package(
         .target(
             name: "allenMath",
             dependencies: [],
-            path: "./iosMath"
+            path: "./"
         )
     ]
 )
